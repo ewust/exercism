@@ -14,8 +14,8 @@ impl RibonucleicAcid {
         RibonucleicAcid { strand: s.to_string() }
     }
 
-    pub fn as_ref(&self) -> String {
-        self.strand.clone()
+    pub fn as_ref(&self) -> &str {
+        &self.strand
     }
 }
 
